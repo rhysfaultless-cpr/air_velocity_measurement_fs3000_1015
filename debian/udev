@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK="sparkfun-fs3000-1015", MODE="0666"
