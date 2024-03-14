@@ -82,6 +82,7 @@ class AirVelocityMeasurement(Node):
 
     def measurement_timer_callback(self):
         measurement_msg = Int16()
+        self.read_air_velocity_measurement()
         measurement_msg.data = self.get_air_velocity_measurement()
         self.air_velocity_measurement_publisher.publish(measurement_msg)
 
