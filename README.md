@@ -33,9 +33,9 @@
                 └── README.md
     ```
 
-    > [!NOTE]  
-    > Files related to the ROS 2 package are all within the folder `air_velocity_measurement/`
-    > The other files and folders are used for system setup. 
+> [!NOTE]  
+> Files related to the ROS 2 package are all within the folder `air_velocity_measurement/`
+> The other files and folders are used for system setup. 
 
 
 3.  Install the udev rule:
