@@ -1,5 +1,7 @@
 # air_velocity_measurement_fs3000_1015
 
+<br />
+
 <p align="center"><img src="/readme_assets/clearpath_robotics_pacs_with_sparkfun_fs3000_1015_kit.png" width="300"/></p>
 
 > [!IMPORTANT]  
