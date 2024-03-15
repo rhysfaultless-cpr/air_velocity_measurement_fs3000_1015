@@ -91,9 +91,9 @@
     ros2 run air_velocity_measurement air_velocity_measurement
     ```
 
-    > [!NOTE]  
-    > `ros2 run` may have issues if the sensor is connected as a device other than the default `/dev/ttyUSB0`.
-    > The launch file includes line to change this parameter.
+> [!NOTE]  
+> `ros2 run` may have issues if the sensor is connected as a device other than the default `/dev/ttyUSB0`.
+> The launch file includes line to change this parameter.
 
 <br />
 
