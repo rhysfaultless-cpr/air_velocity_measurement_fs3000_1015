@@ -1,6 +1,6 @@
 # air_velocity_measurement_fs3000_1015
 
-<center><img src="/readme_assets/clearpath_robotics_pacs_with_sparkfun_fs3000_1015_kit.png" width="300"/></center>
+<p align="center"><img src="/readme_assets/clearpath_robotics_pacs_with_sparkfun_fs3000_1015_kit.png" width="300"/></p>
 
 > [!IMPORTANT]  
 > This branch is for [ROS 2 Humble](https://docs.ros.org/en/humble/index.html).
