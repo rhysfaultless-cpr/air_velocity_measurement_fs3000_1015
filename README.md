@@ -46,15 +46,15 @@
     ```
 4.  Connect the hardware: 
 
-    - Sensor → Development Board wit Qwiic cable
-    - Development Board → Computer with USB cable
+    - Sensor → Development Board with a Qwiic cable
+    - Development Board → Computer with a USB cable
 
 5.  Open the Arduino IDE.
     
     - Configure the IDE to accept the SparkFun Artemis development board, and the SparkFun_FS3000_Arduino_Library.
       This process is described in SparkFun's documentation.
     - Add the contents of this repository's file `air_velocity_measurement.ino` to your Arduino sketch.
-      This file has the same content as SparkFun's example, but making configuring the sketch for metric units and the 1015 variant of the sensor.
+      This file has the same content as SparkFun's example, but configures the sketch for metric units and the 1015 variant of the sensor.
     - Build and flash the sketch to the SparkFun Artemis development board
 
 6.  Build the workspace:
@@ -93,7 +93,7 @@
 
 > [!NOTE]  
 > `ros2 run` may have issues if the sensor is connected as a device other than the default `/dev/ttyUSB0`.
-> The launch file includes line to change this parameter.
+> The launch file includes a line to change this parameter.
 
 <br />
 
