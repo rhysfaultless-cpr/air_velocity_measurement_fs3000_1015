@@ -57,15 +57,17 @@ class AirVelocityMeasurement(Node):
         response = str(self.serial_port.read(self.SERIAL_READ_SIZE))
         self.serial_port.flush()
         self.serial_lock.release()
-        
-        response_head, response_sep, response_tail = response.partition("n")
-        response = response_head
-        response = response.rstrip(response[-1])
-        response = response.lstrip(response[0])
-        response = response.lstrip(response[0])
-        response = int(float(response) * 100)
-        
-        self.set_air_velocity_measurement(response)
+        try:
+            response_head, response_sep, response_tail = response.partition("n")
+            response = response_head
+            response = response.rstrip(response[-1])
+            response = response.lstrip(response[0])
+            response = response.lstrip(response[0])
+            response = int(float(response) * 100)
+            self.set_air_velocity_measurement(response)
+        except:
+            self.get_logger().info('Error with air_velocity_measurement read. Publishing zero velocity.')
+            self.set_air_velocity_measurement(0)
 
 
     def set_air_velocity_measurement(self, content):
